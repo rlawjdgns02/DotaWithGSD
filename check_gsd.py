@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 import numpy as np
 from collections import defaultdict
+from utils.config import DOTA_DATA_ROOT
 import json
 
 def parse_meta_file(meta_path):
@@ -150,13 +151,12 @@ def analyze_gsd_dataset(data_root, splits=['train', 'val']):
     return results
 
 if __name__ == '__main__':
-    data_root = r'D:\DOTA_merged'
 
     print("="*60)
     print("DOTA v2.0 Dataset - GSD Coverage Analysis")
     print("="*60)
 
-    results = analyze_gsd_dataset(data_root, splits=['train', 'val'])
+    results = analyze_gsd_dataset(DOTA_DATA_ROOT, splits=['train', 'val'])
 
     # 결과를 JSON으로 저장
     output_file = 'gsd_analysis_results.json'
