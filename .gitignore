@@ -1,4 +1,6 @@
-/.claude
+\.claude
+\plots
+__pycache__
 *.pptx
 *.json
 .env
