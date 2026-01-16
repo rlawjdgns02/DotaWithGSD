@@ -1,6 +1,6 @@
 \.claude
 \plots
 __pycache__
-*.pptx
+\진행보고
 *.json
 .env
