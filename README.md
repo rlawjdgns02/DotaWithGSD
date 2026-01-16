@@ -30,7 +30,7 @@ This simple check helps refine bounding box accuracy—critical for tiny objects
 ## 🔍 Why it Matters
 
 **The Problem:**  
-Tiny objects in aerial images are hard to localize precisely. Current detectors suffer ~37% performance drop when requiring higher accuracy (IoU 0.5 → 0.75).
+Tiny objects in aerial images are hard to localize precisely. Current detectors suffer performance drop when requiring higher accuracy (IoU 0.5 → 0.75).
 
 **Our Approach:**  
 Leverage GSD metadata (already present in satellite imagery) as semantic reasoning to guide localization—without extra sensors or computational cost.
@@ -78,7 +78,7 @@ AI가 "소형 차량"을 탐지했을 때, 우리는 확인할 수 있습니다:
 ## 🔍 왜 중요한가?
 
 **문제점:**  
-항공 영상 속 초소형 객체들은 정밀한 위치 추정이 어렵습니다. 현재 탐지기들은 더 높은 정확도를 요구할 때(IoU 0.5 → 0.75) 약 37%의 성능 하락을 겪습니다.
+항공 영상 속 초소형 객체들은 정밀한 위치 추정이 어렵습니다. 현재 탐지기들은 더 높은 정확도를 요구할 때(IoU 0.5 → 0.75) 성능 하락을 겪습니다.
 
 **우리의 접근:**  
 위성 영상에 이미 존재하는 GSD 메타데이터를 의미론적 추론(semantic reasoning)에 활용하여 위치 추정을 가이드합니다—추가 센서나 계산 비용 없이.
